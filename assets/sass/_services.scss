@@ -1,0 +1,193 @@
+.main-page-wrapper{
+    .banner-section{
+        height: 540px;
+        background-image: url("../images/services-banner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .banner-content{
+            h1{
+                font-family: $primaryfont;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 85px;
+                line-height: 105px;
+                letter-spacing: -0.005em;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+
+    .help-section{
+        .content-items{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+            background: #FFFFFF;
+            margin-bottom: 40px;
+
+            .content-icon{
+                margin-right: 32px;
+            }
+
+            .content-details{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                h1{
+                    font-family: $primaryfont;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #252525;
+                    margin-bottom: 8px;
+                }
+                p{
+                    font-family: $primaryfont;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 22.5px;
+                    color: #756666;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .about-section{
+        padding-top: 100px;
+        .section-content-wrapper{
+            .product-services{
+                .services-lists{
+                    margin-bottom: 0;
+                    .service-list-item{
+                        margin-top: 32px;
+                        .product-details{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-bottom: 6px;
+                            h2{
+                                font-family: $primaryfont;
+                                font-style: normal;
+                                font-weight: 800;
+                                font-size: 18px;
+                                line-height: 27px;
+                                color: #161616;
+                            }
+                            p{
+                                font-family: $primaryfont;
+                                font-style: normal;
+                                font-weight: 800;
+                                font-size: 18px;
+                                line-height: 27px;
+                                color: #756666;
+                                margin-bottom: 0;
+                            }
+                        }
+
+                        .progress{
+                            height: 2px;
+                            .progress-bar{
+                                background: #214F95;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .image-wrapper{
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $screen_1024px){
+    .main-page-wrapper{
+        .banner-section{
+            .banner-content{
+                padding-left: 40px;
+            }
+        }
+        .help-section{
+            margin-bottom: 40px;
+            .section-desc{
+                padding-left: 100px;
+                padding-right: 100px;
+            }
+
+            .content-items{
+                .content-icon{
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $screen_768px){
+    .main-page-wrapper{
+        .banner-section{
+            height: 450px;
+            .banner-content{
+                padding-left: 40px;
+                padding-right: 40px;
+                padding-top: 40px;
+                margin: 0;
+                max-width: 100%;
+
+                h1{
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+
+        .help-section{
+            .section-desc{
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+
+        .about-section{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: $screen_540px){
+    .main-page-wrapper{
+        .banner-section{
+            .banner-content{
+                h1{
+                    font-size: 60px;
+                    line-height: 75px;
+                }
+            }
+        }
+
+        .help-section{
+            .container{
+                padding: 0 20px !important;
+                .section-desc{
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
